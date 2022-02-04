@@ -1,6 +1,6 @@
 # Terraform module for AWS SSO
 
-This is module for AWS SSO which assigns SSO group with given name with the given permission set and accounts.
+This is a module for AWS SSO which grants given permission to SSO group and assigns given accounts to it.
 
 For example the snippet below grants permission `arn:aws:iam::aws:policy/AlexaForBusinessDeviceSetup` to `AlexaUsers` group (created manually in AWS SSO, because there is no AWS API for this operation) and assigns AWS accounts `001000000998` and `001000000999` to that group.   
 
@@ -16,8 +16,7 @@ module "sso_admins" {
 }
 ```
 
-The default permission for the group is `arn:aws:iam::aws:policy/AdministratorAccess` , so you can assign administrators
-to your AWS accounts just like that:
+The default permission for the group is `arn:aws:iam::aws:policy/AdministratorAccess` , so you can assign administrators to your AWS accounts just like that:
 
 ```hcl
 module "sso_admins" {
