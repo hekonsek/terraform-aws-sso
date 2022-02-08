@@ -66,3 +66,7 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
+## License
+
+This project is distributed under [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
